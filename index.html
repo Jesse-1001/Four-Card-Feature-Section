@@ -1,45 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        main{
+            font-family: "Poppins", sans-serif; 
+            color:hsl(229, 6%, 66%);
+            display: flex;
+            justify-content: center ;
+            align-items: center;
+            gap: 25px;
+            margin-top: 20px;
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
+            
+            
+        }
+        
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+        
+    
+        
+        
+        header{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            color: hsl(229, 6%, 66%);
+            font-family: "Poppins", sans-serif;
+
+            
+
+        }
+        #box1{
+            border-top:solid cyan;
+            border-radius: 7px;
+            background-color: white;
+           
+            box-shadow: 0px 2px 9px hsl(229, 6%, 66%);
+            width: 350px;
+            height: 200px;
+            padding: 5px;
+           
+        }
+        #box2{ 
+           border-top:solid red;
+           border-radius: 7px;
+            background-color: white;
+           
+            box-shadow: 0px 2px 9px  hsl(229, 6%, 66%);
+            width: 350px;
+            height: 200px;
+            padding: 5px;
+
+         
+        }
+        #box3{
+            border-top:solid orange;
+            border-radius: 7px;
+            background-color: white;
+            
+            box-shadow: 0px 2px 9px   hsl(229, 6%, 66%);
+            width: 350px;
+            height: 200px;
+            padding: 5px;
+            
+        }
+        #box4{
+            border-top:solid blue;
+            border-radius: 7px;
+            background-color: white;
+          
+            box-shadow: 0px 2px  9px hsl(229, 6%, 66%);
+            width: 350px;
+            height: 200px;
+            padding: 5px;
+            }
+
+       
+        body{
+            background-color: white;
+        }
+        #rel{ 
+            font-size: 29px;
+            margin-top: 30px;
+            
+        }
+        #power{
+            font-size: 30px;
+            font-weight: bold;
+            color:  hsl(234, 12%, 34%);
+            margin-top: -55px;
+           
+        }
+        #art{
+            font-size: 15px;
+            margin-top: -30px;
+            
+        }
+        h3{
+            margin-left: 10px;
+            font-weight: bold;
+            color:  hsl(234, 12%, 34%);
+        }
+        .text{
+            margin-left: 10px;
+           
+        }
+        img{
+            height: 45px;
+            width: 45px;
+            /* margin-left: 50px; */
+            padding-left: 280px;
+            margin-top: 9px;
+        }
+
+        #set{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .attribution{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-family: "Poppins", sans-serif;
+        }
+        
+    </style>
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+        <header>
+            <div id="rel"><p>Reliable, efficient delivery</p></div>
+            <div id="power"><p> Powered by Technology</p></div>
+            <div id="art">
+                <p>
+                    Our Artificial Intelligence powered tools use millions of project data <br> points 
+                    to ensure that your project is successful
+                </p> 
+            </div>
+        </header>
+        
+        <main>
+            <div id="box1">
+                <h3> Supervisor</h3>
+                <p class="text"> Monitors activity to identify project <br>roadblocks</p>
+                <img src="../images/icon-supervisor.svg" alt="">
+            </div>
+           
+            <div id="set">
+                <div id="box2">
+                    <h3>Team Builder</h3>
+                    <p class="text">Scans our talent network to create the <br> optimal team for your project</p>
+                    <img src="../images/icon-team-builder.svg" alt="">
+                </div>
+                
+                <div id="box3">
+                    <h3> Karma</h3>
+                    <p class="text">Regularly evaluates our talent to ensure <br> quality</p>
+                    <img src="../images/icon-karma.svg" alt="">
+                </div>   
+            </div>
+            
+            
+            <div id="box4">
+                <h3> Calculator</h3>
+                <p class="text">Uses data from past projects to provide <br> better delivery estimates</p>
+                <img src="../images/icon-calculator.svg" >
+            </div>
+        </main>
+        <footer>
+            <p class="attribution">
+              Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+              Coded by <a href="#">Uwem Jesse</a>.
+            </p>
+          </footer>
 </body>
 </html>
